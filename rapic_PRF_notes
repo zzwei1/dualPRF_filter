@@ -1,0 +1,42 @@
+HO comments
+
+
+Hi Joshua,
+ 
+There are three headers in rapic that can help you out:
+-          PRF = the high prf
+-          UNFOLDING = the prf ratio (e.g. 2:3 etc)
+-          HIPRF = whether the odd or even rays were scanned using the high prf.  Not sure if this means odd from north, or odd from the first ray scanned in that tilt.  I've never investigated this value to determine its reliability.
+ 
+If these aren't converted directly to ODIM-centric headers you should be able to find them as 'rapic_XXX' values in the how group.  If they aren't there – then they weren't in the rapic file in the first place.  In that case you are out of luck.
+ 
+Regards,
+ 
+Mark
+
+Hi Mark, Joshua,
+ 
+HIPRF: ODD means odd number azimuths (i.e. 1, 3, 5, etc) are the HIPRF. Similarly for EVEN.
+ 
+Regards,
+Tom
+
+
+Facebook comments
+
+
+
+Hi Patricia, I have one question. What does the prf_flag variable describe?
+We also lack prt_ratio info in our odimh5 files... so I'm working on this too
+Wed 17:23
+
+Patricia
+Prf flag describes at which ofthe 2 prf is each radial scanned
+
+Ok, we use odd or even. I should be able to work it out. Thanks!
+
+Patricia
+Its usually in the headers
+
+If its not know, then a prior analysis has to be done
+
